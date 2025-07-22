@@ -2,6 +2,8 @@
 
 Fast C++ wallpaper color extractor. Generates 16 colors (8 base + 8 bright) from any image for terminal theming.
 
+![Huegen Preview](./Previews/preview.gif)
+
 ## Quick Start
 
 ```bash
@@ -44,4 +46,5 @@ g++ main.cpp -o huegen -I/usr/include/opencv4 -lopencv_core -lopencv_imgcodecs -
 ```
 
 MIT License • PRs welcome
+
 # Huegen
