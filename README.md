@@ -48,3 +48,37 @@ g++ main.cpp -o huegen -I/usr/include/opencv4 -lopencv_core -lopencv_imgcodecs -
 MIT License • PRs welcome
 
 # Huegen
+
+#### Project Architecture
+
+```
+color_extractor/
+│
+├── include/
+│   ├── color_utils.hpp        // Color conversion, distance, etc.
+│   ├── kmeans_wrapper.hpp     // Encapsulate OpenCV k-means logic
+│   ├── css_output.hpp         // Handles generating CSS/other formats
+│   └── config.hpp             // Constants and thresholds
+│
+├── src/
+│   ├── main.cpp               // CLI interface
+│   ├── color_utils.cpp        // Implementation of color_utils.hpp
+│   ├── kmeans_wrapper.cpp     // Implementation of kmeans_wrapper.hpp
+│   ├── css_output.cpp         // Implementation of css_output.hpp
+│
+├── templates/
+│   └── rofi.template          // Example user-defined template
+│
+├── wallpapers/
+│   └── image.jpg              // Example wallpapers
+│
+├── themes/
+│   └── generated-theme.css    // Generated output
+│
+├── build/                     // Build artifacts
+│
+├── README.md
+├── Makefile or CMakeLists.txt
+└── LICENSE
+
+```

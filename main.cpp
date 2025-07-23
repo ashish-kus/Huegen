@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
   resized.convertTo(data, CV_32F);
   data = data.reshape(1, data.total());
 
-  int k = 32; // Number of clusters (more than needed to allow filtering)
+  int k = 64; // Number of clusters (more than needed to allow filtering)
   Mat labels, centers;
   kmeans(data, k, labels,
          TermCriteria(TermCriteria::EPS + TermCriteria::COUNT, 10, 1.0), 3,
@@ -78,26 +78,30 @@ int main(int argc, char **argv) {
       distinctColors.push_back(color);
     }
 
-    if (distinctColors.size() == 8)
+    if (distinctColors.size() == 16)
       break;
   }
 
-  if (distinctColors.size() < 8) {
+  if (distinctColors.size() < 16) {
     cerr << "Warning: Only " << distinctColors.size()
          << " distinct colors found.\n";
   }
 
   // Print CSS/terminal color variables
   cout << "* {\n";
+
   for (int i = 0; i < distinctColors.size(); ++i) {
+    //  int reversedIndex = distinctColors.size() - 1 - i;
+    //    cout << "  --color" << i << ": " <<
+    //    bgrToHex(distinctColors[reversedIndex])
     cout << "  --color" << i << ": " << bgrToHex(distinctColors[i]) << ";\n";
   }
 
-  // Generate bright variants
-  for (int i = 0; i < distinctColors.size(); ++i) {
-    Vec3b bright = brightenColor(distinctColors[i]);
-    cout << "  --color" << (i + 8) << ": " << bgrToHex(bright) << ";\n";
-  }
+  //  // Generate bright variants
+  // for (int i = 0; i < distinctColors.size(); ++i) {
+  //   Vec3b bright = brightenColor(distinctColors[i]);
+  //   cout << "  --color" << (i + 8) << ": " << bgrToHex(bright) << ";\n";
+  // }
   cout << "}\n";
 
   return 0;
