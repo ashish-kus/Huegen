@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
     return 1;
   }
 
-  resize(img, img, Size(400, 400));
+  resize(img, img, Size(200, 200));
   img.convertTo(img, CV_32F, 1.0 / 255.0);
 
   Mat lab;
@@ -32,7 +32,7 @@ int main(int argc, char **argv) {
       filtered.push_back(c);
   }
 
-  auto distinctColors = selectMostDistinctColors(filtered, 8);
+  auto distinctColors = selectMostDistinctColors(filtered, 16);
 
   sort(distinctColors.begin(), distinctColors.end(),
        [](const Vec3f &a, const Vec3f &b) {
