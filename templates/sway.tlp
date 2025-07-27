@@ -1,0 +1,6 @@
+set $foreground {color7.hex}
+set $background {color0.hex}
+
+client.focused          $background $foreground $background $foreground
+client.unfocused        $color2     $color3     $color0     $color7
+client.urgent           $color1     $color0     $color1     $color15

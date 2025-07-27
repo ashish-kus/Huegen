@@ -46,8 +46,20 @@ int main(int argc, char **argv) {
       printf("#%02X%02X%02X\n", bgr[2], bgr[1], bgr[0]);
     }
   */
+
   nlohmann::json colorJson = colorsToJson(distinctColors);
-  cout << colorJson.dump(2) << endl;
+  //  cout << colorJson.dump(2) << endl;
+
+  string templateDir = "../templates";           // Hardcoded
+  string outputDir = "~/.config/huegen/themes/"; //
+  bool success = processTemplates(colorJson, templateDir, outputDir);
+
+  if (success) {
+    cout << "Template processing completed successfully!" << endl;
+  } else {
+    cout << "Template processing failed!" << endl;
+    return 1;
+  }
 
   return 0;
 }

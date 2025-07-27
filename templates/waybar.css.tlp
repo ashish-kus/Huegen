@@ -1,0 +1,19 @@
+/* Waybar CSS Theme */
+@define-color primary {color0.hex};
+@define-color secondary {color1.hex};
+@define-color accent {color2.hex};
+
+window#waybar {
+    background-color: {color0.hex};
+    color: {color15.hex};
+}
+
+#workspaces button.active {
+    background-color: {color1.hex};
+    color: {color0.hex};
+}
+
+#clock {
+    color: {color2.hex};
+    background: rgba({color3.rgb}, {color3.rgb}, {color3.rgb}, 0.8);
+}
