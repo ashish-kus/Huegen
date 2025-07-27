@@ -6,6 +6,7 @@ heugen: \
   CMakeFiles/heugen.dir/src/color_selector.cpp.o \
   CMakeFiles/heugen.dir/src/color_utils.cpp.o \
   CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o \
+  CMakeFiles/heugen.dir/src/template_engine.cpp.o \
   /usr/lib/libopencv_imgcodecs.so.4.12.0 \
   /usr/lib/libopencv_imgproc.so.4.12.0 \
   /usr/lib/libopencv_core.so.4.12.0 \
@@ -99,6 +100,8 @@ CMakeFiles/heugen.dir/src/color_selector.cpp.o:
 CMakeFiles/heugen.dir/src/color_utils.cpp.o:
 
 CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o:
+
+CMakeFiles/heugen.dir/src/template_engine.cpp.o:
 
 /usr/lib/libopencv_imgcodecs.so.4.12.0:
 

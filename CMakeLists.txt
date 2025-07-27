@@ -13,6 +13,7 @@ add_executable(heugen
     src/color_selector.cpp
     src/color_utils.cpp
     src/kmeans_wrapper.cpp
+    src/template_engine.cpp
 )
 
 # Set include directories

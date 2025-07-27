@@ -1,7 +1,7 @@
 CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o: \
- /home/ashishk/Work/heugen-alpha/src/kmeans_wrapper.cpp \
+ /home/ashishk/Work/Repo/Huegen/src/kmeans_wrapper.cpp \
  /usr/include/stdc-predef.h \
- /home/ashishk/Work/heugen-alpha/include/kmeans_wrapper.hpp \
+ /home/ashishk/Work/Repo/Huegen/include/kmeans_wrapper.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

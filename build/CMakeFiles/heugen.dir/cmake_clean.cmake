@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o.d"
   "CMakeFiles/heugen.dir/src/main.cpp.o"
   "CMakeFiles/heugen.dir/src/main.cpp.o.d"
+  "CMakeFiles/heugen.dir/src/template_engine.cpp.o"
+  "CMakeFiles/heugen.dir/src/template_engine.cpp.o.d"
   "heugen"
   "heugen.pdb"
 )

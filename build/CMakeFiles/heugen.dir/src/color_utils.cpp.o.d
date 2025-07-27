@@ -1,7 +1,7 @@
 CMakeFiles/heugen.dir/src/color_utils.cpp.o: \
- /home/ashishk/Work/heugen-alpha/src/color_utils.cpp \
+ /home/ashishk/Work/Repo/Huegen/src/color_utils.cpp \
  /usr/include/stdc-predef.h \
- /home/ashishk/Work/heugen-alpha/include/color_utils.hpp \
+ /home/ashishk/Work/Repo/Huegen/include/color_utils.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ashishk/Work/heugen-alpha
+CMAKE_SOURCE_DIR = /home/ashishk/Work/Repo/Huegen
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ashishk/Work/heugen-alpha/build
+CMAKE_BINARY_DIR = /home/ashishk/Work/Repo/Huegen/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/heugen.dir/depend.make
@@ -73,67 +73,82 @@ CMakeFiles/heugen.dir/codegen:
 .PHONY : CMakeFiles/heugen.dir/codegen
 
 CMakeFiles/heugen.dir/src/main.cpp.o: CMakeFiles/heugen.dir/flags.make
-CMakeFiles/heugen.dir/src/main.cpp.o: /home/ashishk/Work/heugen-alpha/src/main.cpp
+CMakeFiles/heugen.dir/src/main.cpp.o: /home/ashishk/Work/Repo/Huegen/src/main.cpp
 CMakeFiles/heugen.dir/src/main.cpp.o: CMakeFiles/heugen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ashishk/Work/heugen-alpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/heugen.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/heugen.dir/src/main.cpp.o -MF CMakeFiles/heugen.dir/src/main.cpp.o.d -o CMakeFiles/heugen.dir/src/main.cpp.o -c /home/ashishk/Work/heugen-alpha/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ashishk/Work/Repo/Huegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/heugen.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/heugen.dir/src/main.cpp.o -MF CMakeFiles/heugen.dir/src/main.cpp.o.d -o CMakeFiles/heugen.dir/src/main.cpp.o -c /home/ashishk/Work/Repo/Huegen/src/main.cpp
 
 CMakeFiles/heugen.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/heugen.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ashishk/Work/heugen-alpha/src/main.cpp > CMakeFiles/heugen.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ashishk/Work/Repo/Huegen/src/main.cpp > CMakeFiles/heugen.dir/src/main.cpp.i
 
 CMakeFiles/heugen.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/heugen.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ashishk/Work/heugen-alpha/src/main.cpp -o CMakeFiles/heugen.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ashishk/Work/Repo/Huegen/src/main.cpp -o CMakeFiles/heugen.dir/src/main.cpp.s
 
 CMakeFiles/heugen.dir/src/color_selector.cpp.o: CMakeFiles/heugen.dir/flags.make
-CMakeFiles/heugen.dir/src/color_selector.cpp.o: /home/ashishk/Work/heugen-alpha/src/color_selector.cpp
+CMakeFiles/heugen.dir/src/color_selector.cpp.o: /home/ashishk/Work/Repo/Huegen/src/color_selector.cpp
 CMakeFiles/heugen.dir/src/color_selector.cpp.o: CMakeFiles/heugen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ashishk/Work/heugen-alpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/heugen.dir/src/color_selector.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/heugen.dir/src/color_selector.cpp.o -MF CMakeFiles/heugen.dir/src/color_selector.cpp.o.d -o CMakeFiles/heugen.dir/src/color_selector.cpp.o -c /home/ashishk/Work/heugen-alpha/src/color_selector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ashishk/Work/Repo/Huegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/heugen.dir/src/color_selector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/heugen.dir/src/color_selector.cpp.o -MF CMakeFiles/heugen.dir/src/color_selector.cpp.o.d -o CMakeFiles/heugen.dir/src/color_selector.cpp.o -c /home/ashishk/Work/Repo/Huegen/src/color_selector.cpp
 
 CMakeFiles/heugen.dir/src/color_selector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/heugen.dir/src/color_selector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ashishk/Work/heugen-alpha/src/color_selector.cpp > CMakeFiles/heugen.dir/src/color_selector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ashishk/Work/Repo/Huegen/src/color_selector.cpp > CMakeFiles/heugen.dir/src/color_selector.cpp.i
 
 CMakeFiles/heugen.dir/src/color_selector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/heugen.dir/src/color_selector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ashishk/Work/heugen-alpha/src/color_selector.cpp -o CMakeFiles/heugen.dir/src/color_selector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ashishk/Work/Repo/Huegen/src/color_selector.cpp -o CMakeFiles/heugen.dir/src/color_selector.cpp.s
 
 CMakeFiles/heugen.dir/src/color_utils.cpp.o: CMakeFiles/heugen.dir/flags.make
-CMakeFiles/heugen.dir/src/color_utils.cpp.o: /home/ashishk/Work/heugen-alpha/src/color_utils.cpp
+CMakeFiles/heugen.dir/src/color_utils.cpp.o: /home/ashishk/Work/Repo/Huegen/src/color_utils.cpp
 CMakeFiles/heugen.dir/src/color_utils.cpp.o: CMakeFiles/heugen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ashishk/Work/heugen-alpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/heugen.dir/src/color_utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/heugen.dir/src/color_utils.cpp.o -MF CMakeFiles/heugen.dir/src/color_utils.cpp.o.d -o CMakeFiles/heugen.dir/src/color_utils.cpp.o -c /home/ashishk/Work/heugen-alpha/src/color_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ashishk/Work/Repo/Huegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/heugen.dir/src/color_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/heugen.dir/src/color_utils.cpp.o -MF CMakeFiles/heugen.dir/src/color_utils.cpp.o.d -o CMakeFiles/heugen.dir/src/color_utils.cpp.o -c /home/ashishk/Work/Repo/Huegen/src/color_utils.cpp
 
 CMakeFiles/heugen.dir/src/color_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/heugen.dir/src/color_utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ashishk/Work/heugen-alpha/src/color_utils.cpp > CMakeFiles/heugen.dir/src/color_utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ashishk/Work/Repo/Huegen/src/color_utils.cpp > CMakeFiles/heugen.dir/src/color_utils.cpp.i
 
 CMakeFiles/heugen.dir/src/color_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/heugen.dir/src/color_utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ashishk/Work/heugen-alpha/src/color_utils.cpp -o CMakeFiles/heugen.dir/src/color_utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ashishk/Work/Repo/Huegen/src/color_utils.cpp -o CMakeFiles/heugen.dir/src/color_utils.cpp.s
 
 CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o: CMakeFiles/heugen.dir/flags.make
-CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o: /home/ashishk/Work/heugen-alpha/src/kmeans_wrapper.cpp
+CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o: /home/ashishk/Work/Repo/Huegen/src/kmeans_wrapper.cpp
 CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o: CMakeFiles/heugen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ashishk/Work/heugen-alpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o -MF CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o.d -o CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o -c /home/ashishk/Work/heugen-alpha/src/kmeans_wrapper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ashishk/Work/Repo/Huegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o -MF CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o.d -o CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o -c /home/ashishk/Work/Repo/Huegen/src/kmeans_wrapper.cpp
 
 CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ashishk/Work/heugen-alpha/src/kmeans_wrapper.cpp > CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ashishk/Work/Repo/Huegen/src/kmeans_wrapper.cpp > CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.i
 
 CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ashishk/Work/heugen-alpha/src/kmeans_wrapper.cpp -o CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ashishk/Work/Repo/Huegen/src/kmeans_wrapper.cpp -o CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.s
+
+CMakeFiles/heugen.dir/src/template_engine.cpp.o: CMakeFiles/heugen.dir/flags.make
+CMakeFiles/heugen.dir/src/template_engine.cpp.o: /home/ashishk/Work/Repo/Huegen/src/template_engine.cpp
+CMakeFiles/heugen.dir/src/template_engine.cpp.o: CMakeFiles/heugen.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ashishk/Work/Repo/Huegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/heugen.dir/src/template_engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/heugen.dir/src/template_engine.cpp.o -MF CMakeFiles/heugen.dir/src/template_engine.cpp.o.d -o CMakeFiles/heugen.dir/src/template_engine.cpp.o -c /home/ashishk/Work/Repo/Huegen/src/template_engine.cpp
+
+CMakeFiles/heugen.dir/src/template_engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/heugen.dir/src/template_engine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ashishk/Work/Repo/Huegen/src/template_engine.cpp > CMakeFiles/heugen.dir/src/template_engine.cpp.i
+
+CMakeFiles/heugen.dir/src/template_engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/heugen.dir/src/template_engine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ashishk/Work/Repo/Huegen/src/template_engine.cpp -o CMakeFiles/heugen.dir/src/template_engine.cpp.s
 
 # Object files for target heugen
 heugen_OBJECTS = \
 "CMakeFiles/heugen.dir/src/main.cpp.o" \
 "CMakeFiles/heugen.dir/src/color_selector.cpp.o" \
 "CMakeFiles/heugen.dir/src/color_utils.cpp.o" \
-"CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o"
+"CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o" \
+"CMakeFiles/heugen.dir/src/template_engine.cpp.o"
 
 # External object files for target heugen
 heugen_EXTERNAL_OBJECTS =
@@ -142,13 +157,14 @@ heugen: CMakeFiles/heugen.dir/src/main.cpp.o
 heugen: CMakeFiles/heugen.dir/src/color_selector.cpp.o
 heugen: CMakeFiles/heugen.dir/src/color_utils.cpp.o
 heugen: CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o
+heugen: CMakeFiles/heugen.dir/src/template_engine.cpp.o
 heugen: CMakeFiles/heugen.dir/build.make
 heugen: CMakeFiles/heugen.dir/compiler_depend.ts
 heugen: /usr/lib/libopencv_imgcodecs.so.4.12.0
 heugen: /usr/lib/libopencv_imgproc.so.4.12.0
 heugen: /usr/lib/libopencv_core.so.4.12.0
 heugen: CMakeFiles/heugen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ashishk/Work/heugen-alpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable heugen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ashishk/Work/Repo/Huegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable heugen"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/heugen.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -160,6 +176,6 @@ CMakeFiles/heugen.dir/clean:
 .PHONY : CMakeFiles/heugen.dir/clean
 
 CMakeFiles/heugen.dir/depend:
-	cd /home/ashishk/Work/heugen-alpha/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ashishk/Work/heugen-alpha /home/ashishk/Work/heugen-alpha /home/ashishk/Work/heugen-alpha/build /home/ashishk/Work/heugen-alpha/build /home/ashishk/Work/heugen-alpha/build/CMakeFiles/heugen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ashishk/Work/Repo/Huegen/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ashishk/Work/Repo/Huegen /home/ashishk/Work/Repo/Huegen /home/ashishk/Work/Repo/Huegen/build /home/ashishk/Work/Repo/Huegen/build /home/ashishk/Work/Repo/Huegen/build/CMakeFiles/heugen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/heugen.dir/depend
 

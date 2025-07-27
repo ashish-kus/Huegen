@@ -1,11 +1,13 @@
 #include "color_selector.hpp"
 #include "color_utils.hpp"
 #include "kmeans_wrapper.hpp"
+#include "template_engine.hpp"
 #include <iostream>
+#include <nlohmann/json.hpp>
 
 using namespace std;
 using namespace cv;
-
+using json = nlohmann::json;
 int main(int argc, char **argv) {
   if (argc < 2) {
     cerr << "Usage: ./heugen <image_path>\n";
@@ -38,11 +40,14 @@ int main(int argc, char **argv) {
        [](const Vec3f &a, const Vec3f &b) {
          return calculateSaturation(a) > calculateSaturation(b);
        });
-
-  for (const auto &labColor : distinctColors) {
-    Vec3b bgr = labToBgr(labColor);
-    printf("#%02X%02X%02X\n", bgr[2], bgr[1], bgr[0]);
-  }
+  /*
+    for (const auto &labColor : distinctColors) {
+      Vec3b bgr = labToBgr(labColor);
+      printf("#%02X%02X%02X\n", bgr[2], bgr[1], bgr[0]);
+    }
+  */
+  nlohmann::json colorJson = colorsToJson(distinctColors);
+  cout << colorJson.dump(2) << endl;
 
   return 0;
 }
