@@ -2,6 +2,7 @@
 #include "color_utils.hpp"
 #include "kmeans_wrapper.hpp"
 #include "template_engine.hpp"
+#include <cstdlib>
 #include <iostream>
 #include <nlohmann/json.hpp>
 
@@ -50,8 +51,10 @@ int main(int argc, char **argv) {
   nlohmann::json colorJson = colorsToJson(distinctColors);
   //  cout << colorJson.dump(2) << endl;
 
-  string templateDir = "../templates";           // Hardcoded
-  string outputDir = "~/.config/huegen/themes/"; //
+  std::string templateDir = "../templates"; // Hardcoded
+  std::string outputDir =
+      std::string(std::getenv("HOME")) + "/.config/huegen/themes/";
+
   bool success = processTemplates(colorJson, templateDir, outputDir);
 
   if (success) {
