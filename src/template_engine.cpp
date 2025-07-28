@@ -25,6 +25,7 @@ json colorsToJson(const vector<Vec3f> &labColors) {
     string colorKey = "color" + to_string(i);
     result[colorKey] = {
         {"hex", formatHex(rgbColor)},
+        {"strip", strip(rgbColor)},
         {"rgb", "rgb(" + to_string(rgbColor[0]) + ", " +
                     to_string(rgbColor[1]) + ", " + to_string(rgbColor[2]) +
                     ")"},

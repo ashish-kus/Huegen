@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ashishk/Work/Repo/Huegen/src/color_selector.cpp" "CMakeFiles/heugen.dir/src/color_selector.cpp.o" "gcc" "CMakeFiles/heugen.dir/src/color_selector.cpp.o.d"
   "/home/ashishk/Work/Repo/Huegen/src/color_utils.cpp" "CMakeFiles/heugen.dir/src/color_utils.cpp.o" "gcc" "CMakeFiles/heugen.dir/src/color_utils.cpp.o.d"
+  "/home/ashishk/Work/Repo/Huegen/src/hooks.cpp" "CMakeFiles/heugen.dir/src/hooks.cpp.o" "gcc" "CMakeFiles/heugen.dir/src/hooks.cpp.o.d"
   "/home/ashishk/Work/Repo/Huegen/src/kmeans_wrapper.cpp" "CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o" "gcc" "CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o.d"
   "/home/ashishk/Work/Repo/Huegen/src/main.cpp" "CMakeFiles/heugen.dir/src/main.cpp.o" "gcc" "CMakeFiles/heugen.dir/src/main.cpp.o.d"
   "/home/ashishk/Work/Repo/Huegen/src/template_engine.cpp" "CMakeFiles/heugen.dir/src/template_engine.cpp.o" "gcc" "CMakeFiles/heugen.dir/src/template_engine.cpp.o.d"

@@ -73,6 +73,13 @@ string formatHex(const Vec3b &rgbColor) {
   return ss.str();
 }
 
+string strip(const Vec3b &rgbColor) {
+  stringstream ss;
+  ss << hex << uppercase << setfill('0') << setw(2) << (int)rgbColor[0]
+     << setw(2) << (int)rgbColor[1] << setw(2) << (int)rgbColor[2];
+  return ss.str();
+}
+
 Vec3b labToBgr(Vec3f labColor) {
   Mat lab(1, 1, CV_32FC3, Scalar(labColor[0], labColor[1], labColor[2]));
   Mat bgr;

@@ -177,6 +177,30 @@ src/color_utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/color_utils.cpp.s
 .PHONY : src/color_utils.cpp.s
 
+src/hooks.o: src/hooks.cpp.o
+.PHONY : src/hooks.o
+
+# target to build an object file
+src/hooks.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/hooks.cpp.o
+.PHONY : src/hooks.cpp.o
+
+src/hooks.i: src/hooks.cpp.i
+.PHONY : src/hooks.i
+
+# target to preprocess a source file
+src/hooks.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/hooks.cpp.i
+.PHONY : src/hooks.cpp.i
+
+src/hooks.s: src/hooks.cpp.s
+.PHONY : src/hooks.s
+
+# target to generate assembly for a file
+src/hooks.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/hooks.cpp.s
+.PHONY : src/hooks.cpp.s
+
 src/kmeans_wrapper.o: src/kmeans_wrapper.cpp.o
 .PHONY : src/kmeans_wrapper.o
 
@@ -264,6 +288,9 @@ help:
 	@echo "... src/color_utils.o"
 	@echo "... src/color_utils.i"
 	@echo "... src/color_utils.s"
+	@echo "... src/hooks.o"
+	@echo "... src/hooks.i"
+	@echo "... src/hooks.s"
 	@echo "... src/kmeans_wrapper.o"
 	@echo "... src/kmeans_wrapper.i"
 	@echo "... src/kmeans_wrapper.s"

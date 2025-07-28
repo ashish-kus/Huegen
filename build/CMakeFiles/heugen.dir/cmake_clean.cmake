@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/heugen.dir/src/color_selector.cpp.o.d"
   "CMakeFiles/heugen.dir/src/color_utils.cpp.o"
   "CMakeFiles/heugen.dir/src/color_utils.cpp.o.d"
+  "CMakeFiles/heugen.dir/src/hooks.cpp.o"
+  "CMakeFiles/heugen.dir/src/hooks.cpp.o.d"
   "CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o"
   "CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o.d"
   "CMakeFiles/heugen.dir/src/main.cpp.o"
