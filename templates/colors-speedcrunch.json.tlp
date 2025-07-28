@@ -1,0 +1,15 @@
+{
+  "cursor": "{color0.hex}",
+  "number": "{color1.hex}",
+  "parens": "{color2.hex}",
+  "result": "{color3.hex}",
+  "comment": "{color4.hex}",
+  "matched": "#{color5.hex}",
+  "function": "{color6.hex}",
+  "operator": "#{color7.hex}",
+  "variable": "#{color8.hex}",
+  "scrollbar": "{color9.hex}",
+  "separator": "{color10.hex}",
+  "background": "{color11.hex}",
+  "editorbackground": "{color12.hex}"
+}
