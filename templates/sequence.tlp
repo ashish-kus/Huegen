@@ -40,4 +40,3 @@ printf "\
 # ]4;232:     Extended color palette entry (uses color0)
 # ]4;256:     Extended color palette entry (uses color7)
 # ]708:       Border/frame color (uses color0)
-
