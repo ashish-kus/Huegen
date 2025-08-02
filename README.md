@@ -1,45 +1,40 @@
-# HueGen - Intelligent Color Palette Extractor
+# Huegen - Color Theme Generator
 
-HueGen is a sophisticated C++ application that extracts dominant color palettes from images using advanced computer vision techniques and generates customizable theme files for various applications.
+Huegen is a C++ tool that extracts distinctive colors from images and generates theme files for various applications. It uses advanced color analysis techniques including K-means clustering and perceptual color distance calculations to create visually appealing color palettes.
 
 ## Features
 
-- **Intelligent Color Extraction**: Uses K-means clustering in LAB color space for perceptually accurate color grouping
-- **Smart Color Selection**: Implements a greedy algorithm to select the most visually distinct colors
-- **Multiple Color Formats**: Supports HEX, RGB, RGBA, HSL, HSV, and LAB color representations
-- **Template Engine**: Flexible template system for generating theme files
-- **Saturation-Based Filtering**: Prioritizes vibrant colors while filtering out low-saturation tones
-- **Cross-Platform**: Built with OpenCV and standard C++ libraries
+- **Intelligent Color Extraction**: Uses K-means clustering to identify dominant colors
+- **Perceptual Color Selection**: Selects the most visually distinct colors using LAB color space
+- **Multiple Color Formats**: Supports HEX, RGB, RGBA, HSL, HSV, and LAB formats
+- **Template Engine**: Processes template files to generate configuration files for various applications
+- **Automatic Filtering**: Removes colors that are too dark (lightness < 30)
 
-## Prerequisites
+## Installation
 
-### Required Dependencies
+### Dependencies
 
-- **OpenCV 4.x** - Computer vision and image processing
-- **nlohmann/json** - JSON parsing and generation
-- **C++17 compiler** (GCC 7+, Clang 5+, or MSVC 2017+)
-- **CMake 3.10+** (recommended for building)
+- OpenCV 4.x
+- nlohmann/json library
+- C++17 compatible compiler
+- CMake (recommended for building)
 
-### Installation on Linux
-
-```
-./install.sh
-```
-
-## Building
-
-### Using Make (Simple)
+### Building
 
 ```bash
-g++ -std=c++17 -o huegen *.cpp -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
-```
+# Clone the repository
+git clone <repository-url>
+cd huegen
 
-### Using CMake (Recommended)
-
-```bash
+# Create build directory
 mkdir build && cd build
+
+# Configure and build
 cmake ..
 make
+
+# Install (optional)
+sudo make install
 ```
 
 ## Usage
@@ -50,229 +45,230 @@ make
 ./huegen <image_path>
 ```
 
-### Example
+**Example:**
 
 ```bash
-./huegen ~/Pictures/sunset.jpg
+./huegen ~/Pictures/wallpaper.jpg
 ```
 
-The program will:
+### Directory Structure
 
-1. Load and resize the input image to 200x200 pixels
-2. Extract up to 32 color clusters using K-means
-3. Filter out colors with low lightness (L < 30 in LAB space)
-4. Select the 16 most distinct colors using a greedy selection algorithm
-5. Sort colors by saturation (most vibrant first)
-6. Generate theme files from templates
-
-## Output
-
-### Generated Files
-
-Theme files are automatically generated in:
+Huegen expects the following directory structure in your home directory:
 
 ```
-~/.config/huegen/themes/
+~/.config/huegen/
+├── templates/          # Template files (.tlp extension)
+│   ├── waybar.tlp
+│   ├── hyprland.tlp
+│   └── alacritty.tlp
+└── themes/            # Generated theme files (created automatically)
+    ├── waybar
+    ├── hyprland
+    └── alacritty
 ```
-
-### Color Data Structure
-
-Each extracted color includes:
-
-- **HEX**: `#FF6B35`
-- **RGB**: `rgb(255, 107, 53)`
-- **RGBA**: `rgba(255, 107, 53, 1.0)`
-- **HSL**: `hsl(16, 100%, 60%)`
-- **HSV**: `hsv(16, 79%, 100%)`
-- **LAB**: `lab(69, 42, 56)`
 
 ## Template System
 
 ### Template Files (.tlp)
 
-Create template files in the `../templates/` directory with `.tlp` extension.
+Template files use a simple placeholder syntax to define where colors should be inserted:
 
-### Template Syntax
+```
+{colorN.property}
+```
 
-Use placeholder syntax: `{colorN.property}`
+Where:
 
-#### Example Template (theme.tlp)
+- `N` is the color index (0-15)
+- `property` is the color format (hex, rgb, hsl, etc.)
+
+### Available Properties
+
+For each color (color0 through color15), the following properties are available:
+
+| Property | Example Output           | Description                      |
+| -------- | ------------------------ | -------------------------------- |
+| `hex`    | `#FF5733`                | Hexadecimal color code with #    |
+| `strip`  | `FF5733`                 | Hexadecimal color code without # |
+| `rgb`    | `rgb(255, 87, 51)`       | RGB color function               |
+| `rgba`   | `rgba(255, 87, 51, 1.0)` | RGBA color function              |
+| `hsl`    | `hsl(12, 100%, 60%)`     | HSL color function               |
+| `hsv`    | `hsv(12, 80%, 100%)`     | HSV color function               |
+| `lab`    | `lab(65, 45, 35)`        | LAB color function               |
+
+### Example Templates
+
+#### Waybar Template (`waybar.tlp`)
 
 ```css
-/* Generated Theme */
-:root {
-  --primary: {color0.hex};
-  --secondary: {color1.hex};
-  --accent: {color2.hex};
-  --background: {color15.hex};
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono";
+    font-size: 13px;
+    min-height: 0;
 }
 
-.primary-color {
-  background-color: {color0.hex};
-  color: {color0.rgb};
+window#waybar {
+    background-color: {color0.hex};
+    border-bottom: 3px solid {color1.hex};
+    color: {color15.hex};
 }
 
-.gradient {
-  background: linear-gradient(45deg, {color0.hex}, {color1.hex});
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: {color8.hex};
+}
+
+#workspaces button:hover {
+    background: {color2.rgba};
+}
+
+#workspaces button.focused {
+    background-color: {color3.hex};
+    color: {color0.hex};
 }
 ```
 
-#### Available Properties
+#### Hyprland Template (`hyprland.tlp`)
 
-- `hex` - Hexadecimal format (#FF6B35)
-- `rgb` - RGB function format
-- `rgba` - RGBA function format
-- `hsl` - HSL function format
-- `hsv` - HSV function format
-- `lab` - LAB function format
+```ini
+general {
+    col.active_border = {color4.strip} {color5.strip} 45deg
+    col.inactive_border = {color8.strip}
+}
 
-#### Color Indices
+decoration {
+    col.shadow = {color0.strip}
+}
 
-- `color0` to `color15` - Colors sorted by saturation (most vibrant first)
-- `color0` - Most saturated/vibrant color
-- `color15` - Least saturated color
-
-## Algorithm Details
-
-### Color Extraction Process
-
-1. **Image Preprocessing**
-
-   - Resize to 200x200 for consistent processing
-   - Convert to LAB color space for perceptual uniformity
-
-2. **K-means Clustering**
-
-   - Extract 32 initial color clusters
-   - Use PP_CENTERS initialization for better cluster distribution
-
-3. **Color Filtering**
-
-   - Remove colors with lightness < 30 (too dark)
-   - Quantize colors to reduce noise
-
-4. **Distinct Color Selection**
-
-   - Start with highest saturation color
-   - Greedily select colors that maximize minimum distance to selected colors
-   - Uses Euclidean distance in LAB space
-
-5. **Final Sorting**
-   - Sort by saturation for consistent color ordering
-
-### Key Functions
-
-- `extractClusterColors()` - K-means clustering and color extraction
-- `selectMostDistinctColors()` - Greedy selection algorithm
-- `calculateSaturation()` - Saturation calculation in LAB space
-- `colorDistance()` - Euclidean distance between colors
-- `processTemplates()` - Template processing engine
-
-## Project Structure
-
-```
-huegen/
-├── color_selector.hpp/cpp     # Color selection algorithms
-├── color_utils.hpp/cpp        # Color space conversions
-├── kmeans_wrapper.hpp/cpp     # K-means clustering wrapper
-├── template_engine.hpp/cpp    # Template processing
-├── main.cpp                   # Main application
-└── templates/                 # Template files (.tlp)
-    ├── vim.tlp
-    ├── terminal.tlp
-    └── css.tlp
+misc {
+    background_color = {color0.strip}
+}
 ```
 
-## Advanced Usage
+#### Alacritty Template (`alacritty.tlp`)
 
-### Custom Template Directory
+```yaml
+colors:
+  primary:
+    background: "{color0.hex}"
+    foreground: "{color15.hex}"
 
-Modify the `templateDir` variable in main.cpp:
+  normal:
+    black: "{color0.hex}"
+    red: "{color1.hex}"
+    green: "{color2.hex}"
+    yellow: "{color3.hex}"
+    blue: "{color4.hex}"
+    magenta: "{color5.hex}"
+    cyan: "{color6.hex}"
+    white: "{color7.hex}"
 
-```cpp
-std::string templateDir = "/path/to/your/templates";
+  bright:
+    black: "{color8.hex}"
+    red: "{color9.hex}"
+    green: "{color10.hex}"
+    yellow: "{color11.hex}"
+    blue: "{color12.hex}"
+    magenta: "{color13.hex}"
+    cyan: "{color14.hex}"
+    white: "{color15.hex}"
 ```
 
-### Custom Output Directory
+## Color Selection Algorithm
 
-Modify the `outputDir` variable in main.cpp:
+### 1. Image Processing
 
-```cpp
-std::string outputDir = "/path/to/output/";
-```
+- Resizes input image to 200x200 pixels for performance
+- Converts to LAB color space for perceptual color analysis
 
-### Adjusting Color Count
+### 2. K-means Clustering
 
-Change the number of extracted colors by modifying:
+- Extracts 32 color clusters from the image
+- Finds the most frequent color in each cluster
+- Quantizes colors to reduce noise
 
-```cpp
-auto distinctColors = selectMostDistinctColors(filtered, 16); // Change 16 to desired count
-```
+### 3. Filtering
 
-## Examples
+- Removes colors with lightness < 30 (too dark)
+- Ensures minimum visual distinctiveness
 
-### Terminal Theme Generation
+### 4. Color Selection
 
-Create `terminal.tlp`:
+- Starts with the most saturated color
+- Iteratively selects colors with maximum distance from already selected colors
+- Limits selection to 16 colors maximum
+
+### 5. Sorting
+
+- Final colors are sorted by saturation (highest to lowest)
+- `color0` = most saturated, `color15` = least saturated
+
+## Configuration
+
+### Environment Variables
+
+The tool uses the following paths:
+
+- Template directory: `$HOME/.config/huegen/templates/`
+- Output directory: `$HOME/.config/huegen/themes/`
+
+### Custom Templates
+
+To create custom templates:
+
+1. Create a new `.tlp` file in the templates directory
+2. Use the `{colorN.property}` syntax for color placeholders
+3. Run huegen to generate the themed file
+
+## Integration Examples
+
+### Waybar Integration
 
 ```bash
-# Terminal Color Scheme
-foreground={color0.hex}
-background={color15.hex}
-color0={color8.hex}
-color1={color1.hex}
-color2={color2.hex}
-# ... continue for all 16 colors
+# Generate themes
+./huegen ~/Pictures/current_wallpaper.jpg
+
+# Copy generated config
+cp ~/.config/huegen/themes/waybar ~/.config/waybar/style.css
+
+# Reload waybar
+pkill -SIGUSR2 waybar
 ```
 
-### Vim Theme Generation
+### Hyprland Integration
 
-Create `vim.tlp`:
+```bash
+# Generate themes
+./huegen ~/Pictures/current_wallpaper.jpg
 
-```vim
-" Generated Vim Colorscheme
-hi Normal guifg={color0.hex} guibg={color15.hex}
-hi Comment guifg={color8.hex}
-hi String guifg={color2.hex}
-hi Function guifg={color4.hex}
+# Include in hyprland.conf
+echo "source = ~/.config/huegen/themes/hyprland" >> ~/.config/hypr/hyprland.conf
+
+# Reload hyprland
+hyprctl reload
 ```
-
-## Troubleshooting
-
-### Common Issues
-
-1. **OpenCV not found**
-
-   ```bash
-   export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
-   ```
-
-2. **Permission denied for output directory**
-
-   ```bash
-   mkdir -p ~/.config/huegen/themes/
-   chmod 755 ~/.config/huegen/themes/
-   ```
-
-3. **Template not processing**
-   - Ensure template files have `.tlp` extension
-   - Check template syntax: `{colorN.property}`
-   - Verify template directory path
 
 ## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+### Code Style
 
-## License
+- Use 2-space indentation
+- Follow existing naming conventions
+- Add comments for complex algorithms
 
-This project is open source. Please check the repository for license details.
+### Adding New Features
 
-## Acknowledgments
+1. Color format support: Extend `colorsToJson()` function
+2. New color selection algorithms: Modify `selectMostDistinctColors()`
+3. Additional integrations: Add hook functions in `hooks.cpp`
 
-- Built with OpenCV for robust image processing
-- Uses LAB color space for perceptually uniform color analysis
-- Inspired by modern color palette extraction techniques
+### Version 1.0.0
+
+- Initial release
+- K-means color extraction
+- Template processing system
+- Support for 7 color formats
+- 16-color palette generation
