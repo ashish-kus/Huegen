@@ -1,6 +1,5 @@
 #include "color_selector.hpp"
 #include "color_utils.hpp"
-// #include "hooks.hpp"
 #include "kmeans_wrapper.hpp"
 #include "template_engine.hpp"
 #include <cstdlib>
@@ -38,8 +37,8 @@ int main(int argc, char **argv) {
 
   nlohmann::json colorJson = colorsToJson(distinctColors);
 
-  std::string templateDir = std::string(std::getenv("HOME")) +
-                            "/.config/huegen/templates/"; // Hardcoded
+  std::string templateDir =
+      std::string(std::getenv("HOME")) + "/.config/huegen/templates/";
   std::string outputDir =
       std::string(std::getenv("HOME")) + "/.config/huegen/themes/";
 

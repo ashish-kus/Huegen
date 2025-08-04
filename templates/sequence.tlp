@@ -1,5 +1,4 @@
 # Terminal Color Theme Template
-# Replace colorX.hex with actual hex color values (e.g., #111010)
 
 printf "\
 \033]4;0;{color0.hex}\007\
