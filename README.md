@@ -2,6 +2,9 @@
 
 Huegen is a C++ tool that extracts distinctive colors from images and generates theme files for various applications. It uses advanced color analysis techniques including K-means clustering and perceptual color distance calculations to create visually appealing color palettes.
 
+🚧 Work in Progress:
+The project has a strong and usable foundation, making it practical for day-to-day use. However, it still lacks many planned features. Contributions and improvements are welcome as development continues.
+
 ## Features
 
 - **Intelligent Color Extraction**: Uses K-means clustering to identify dominant colors
@@ -176,35 +179,6 @@ colors:
     cyan: "{color14.hex}"
     white: "{color15.hex}"
 ```
-
-## Color Selection Algorithm
-
-### 1. Image Processing
-
-- Resizes input image to 200x200 pixels for performance
-- Converts to LAB color space for perceptual color analysis
-
-### 2. K-means Clustering
-
-- Extracts 32 color clusters from the image
-- Finds the most frequent color in each cluster
-- Quantizes colors to reduce noise
-
-### 3. Filtering
-
-- Removes colors with lightness < 30 (too dark)
-- Ensures minimum visual distinctiveness
-
-### 4. Color Selection
-
-- Starts with the most saturated color
-- Iteratively selects colors with maximum distance from already selected colors
-- Limits selection to 16 colors maximum
-
-### 5. Sorting
-
-- Final colors are sorted by saturation (highest to lowest)
-- `color0` = most saturated, `color15` = least saturated
 
 ## Configuration
 
