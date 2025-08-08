@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Native FoxColor",
+  "version": "0.1",
+  "description": "Apply Huegen/pywal palettes to pages (and Firefox UI where supported) via Native Messaging.",
+  "permissions": ["nativeMessaging", "scripting", "tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "Native FoxColor"
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "native-foxcolor@example.com"
+    }
+  }
+}

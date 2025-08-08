@@ -43,6 +43,15 @@ int main(int argc, char **argv) {
       std::string(std::getenv("HOME")) + "/.config/huegen/themes/";
 
   bool success = processTemplates(colorJson, templateDir, outputDir);
+  std::string outputFile = outputDir + "colors.json";
+  std::ofstream file(outputFile);
+  if (!file.is_open()) {
+    std::cerr << "Error: Could not open file " << outputDir << "\n";
+    return 1;
+  }
+
+  file << colorJson.dump(4); // Pretty-print with 4-space indentation
+  file.close();
 
   if (success) {
     cout << "Template processing completed successfully!" << endl;

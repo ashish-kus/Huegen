@@ -1,0 +1,7 @@
+{
+  "name": "huegen_firefox",
+  "description": "Huegen -> Native FoxColor",
+  "path": "/home/your-username/.config/huegen/native/huegen_firefox",
+  "type": "stdio",
+  "allowed_extensions": ["native-foxcolor@example.com", "pywalfox@example.com"]
+}

@@ -1,0 +1,16 @@
+{
+  "frame": "#111111",
+  "tab_background_text": "#E6E6E6",
+  "toolbar": "#121212",
+  "toolbar_text": "#E6E6E6",
+  "toolbar_field": "#222222",
+  "toolbar_field_text": "#E6E6E6",
+  "tab_selected": "#2a6f97",
+  "popup": "#141414",
+  "popup_text": "#f2f2f2",
+  "sidebar": "#101010",
+  "sidebar_text": "#e6e6e6",
+  "sidebar_highlight": "#2a6f97",
+  "page_background": "#0f0f0f",
+  "page_text": "#e6e6e6"
+}
