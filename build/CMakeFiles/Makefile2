@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /home/ashishk/Work/Repo/Huegen/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/heugen.dir/all
+all: CMakeFiles/huegen.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/heugen.dir/codegen
+codegen: CMakeFiles/huegen.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/heugen.dir/clean
+clean: CMakeFiles/huegen.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/heugen.dir
+# Target rules for target CMakeFiles/huegen.dir
 
 # All Build rule for target.
-CMakeFiles/heugen.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ashishk/Work/Repo/Huegen/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target heugen"
-.PHONY : CMakeFiles/heugen.dir/all
+CMakeFiles/huegen.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ashishk/Work/Repo/Huegen/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target huegen"
+.PHONY : CMakeFiles/huegen.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/heugen.dir/rule: cmake_check_build_system
+CMakeFiles/huegen.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ashishk/Work/Repo/Huegen/build/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/heugen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/huegen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ashishk/Work/Repo/Huegen/build/CMakeFiles 0
-.PHONY : CMakeFiles/heugen.dir/rule
+.PHONY : CMakeFiles/huegen.dir/rule
 
 # Convenience name for target.
-heugen: CMakeFiles/heugen.dir/rule
-.PHONY : heugen
+huegen: CMakeFiles/huegen.dir/rule
+.PHONY : huegen
 
 # codegen rule for target.
-CMakeFiles/heugen.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ashishk/Work/Repo/Huegen/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target heugen"
-.PHONY : CMakeFiles/heugen.dir/codegen
+CMakeFiles/huegen.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ashishk/Work/Repo/Huegen/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target huegen"
+.PHONY : CMakeFiles/huegen.dir/codegen
 
 # clean rule for target.
-CMakeFiles/heugen.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/clean
-.PHONY : CMakeFiles/heugen.dir/clean
+CMakeFiles/huegen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/clean
+.PHONY : CMakeFiles/huegen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

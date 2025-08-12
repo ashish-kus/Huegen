@@ -1,4 +1,4 @@
-CMakeFiles/heugen.dir/src/hooks.cpp.o: \
+CMakeFiles/huegen.dir/src/hooks.cpp.o: \
  /home/ashishk/Work/Repo/Huegen/src/hooks.cpp /usr/include/stdc-predef.h \
  /home/ashishk/Work/Repo/Huegen/include/hooks.hpp \
  /usr/include/c++/15.1.1/string \

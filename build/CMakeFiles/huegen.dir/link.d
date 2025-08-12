@@ -1,13 +1,13 @@
-heugen: \
+huegen: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
-  CMakeFiles/heugen.dir/src/main.cpp.o \
-  CMakeFiles/heugen.dir/src/color_selector.cpp.o \
-  CMakeFiles/heugen.dir/src/color_utils.cpp.o \
-  CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o \
-  CMakeFiles/heugen.dir/src/template_engine.cpp.o \
-  CMakeFiles/heugen.dir/src/hooks.cpp.o \
+  CMakeFiles/huegen.dir/src/main.cpp.o \
+  CMakeFiles/huegen.dir/src/color_selector.cpp.o \
+  CMakeFiles/huegen.dir/src/color_utils.cpp.o \
+  CMakeFiles/huegen.dir/src/kmeans_wrapper.cpp.o \
+  CMakeFiles/huegen.dir/src/template_engine.cpp.o \
+  CMakeFiles/huegen.dir/src/hooks.cpp.o \
   /usr/lib/libopencv_imgcodecs.so.4.12.0 \
   /usr/lib/libopencv_imgproc.so.4.12.0 \
   /usr/lib/libopencv_core.so.4.12.0 \
@@ -94,17 +94,17 @@ heugen: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
 
-CMakeFiles/heugen.dir/src/main.cpp.o:
+CMakeFiles/huegen.dir/src/main.cpp.o:
 
-CMakeFiles/heugen.dir/src/color_selector.cpp.o:
+CMakeFiles/huegen.dir/src/color_selector.cpp.o:
 
-CMakeFiles/heugen.dir/src/color_utils.cpp.o:
+CMakeFiles/huegen.dir/src/color_utils.cpp.o:
 
-CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o:
+CMakeFiles/huegen.dir/src/kmeans_wrapper.cpp.o:
 
-CMakeFiles/heugen.dir/src/template_engine.cpp.o:
+CMakeFiles/huegen.dir/src/template_engine.cpp.o:
 
-CMakeFiles/heugen.dir/src/hooks.cpp.o:
+CMakeFiles/huegen.dir/src/hooks.cpp.o:
 
 /usr/lib/libopencv_imgcodecs.so.4.12.0:
 

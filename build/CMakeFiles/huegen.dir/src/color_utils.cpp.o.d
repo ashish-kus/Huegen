@@ -1,4 +1,4 @@
-CMakeFiles/heugen.dir/src/color_utils.cpp.o: \
+CMakeFiles/huegen.dir/src/color_utils.cpp.o: \
  /home/ashishk/Work/Repo/Huegen/src/color_utils.cpp \
  /usr/include/stdc-predef.h \
  /home/ashishk/Work/Repo/Huegen/include/color_utils.hpp \

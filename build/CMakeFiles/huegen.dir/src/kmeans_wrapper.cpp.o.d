@@ -1,7 +1,7 @@
-CMakeFiles/heugen.dir/src/color_selector.cpp.o: \
- /home/ashishk/Work/Repo/Huegen/src/color_selector.cpp \
+CMakeFiles/huegen.dir/src/kmeans_wrapper.cpp.o: \
+ /home/ashishk/Work/Repo/Huegen/src/kmeans_wrapper.cpp \
  /usr/include/stdc-predef.h \
- /home/ashishk/Work/Repo/Huegen/include/color_selector.hpp \
+ /home/ashishk/Work/Repo/Huegen/include/kmeans_wrapper.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -364,5 +364,4 @@ CMakeFiles/heugen.dir/src/color_selector.cpp.o: \
  /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
- /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/ashishk/Work/Repo/Huegen/include/color_utils.hpp
+ /usr/include/opencv4/opencv2/video/background_segm.hpp

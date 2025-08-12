@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named heugen
+# Target rules for targets named huegen
 
 # Build rule for target.
-heugen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 heugen
-.PHONY : heugen
+huegen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 huegen
+.PHONY : huegen
 
 # fast build rule for target.
-heugen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/build
-.PHONY : heugen/fast
+huegen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/build
+.PHONY : huegen/fast
 
 src/color_selector.o: src/color_selector.cpp.o
 .PHONY : src/color_selector.o
 
 # target to build an object file
 src/color_selector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/color_selector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/color_selector.cpp.o
 .PHONY : src/color_selector.cpp.o
 
 src/color_selector.i: src/color_selector.cpp.i
@@ -142,7 +142,7 @@ src/color_selector.i: src/color_selector.cpp.i
 
 # target to preprocess a source file
 src/color_selector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/color_selector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/color_selector.cpp.i
 .PHONY : src/color_selector.cpp.i
 
 src/color_selector.s: src/color_selector.cpp.s
@@ -150,7 +150,7 @@ src/color_selector.s: src/color_selector.cpp.s
 
 # target to generate assembly for a file
 src/color_selector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/color_selector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/color_selector.cpp.s
 .PHONY : src/color_selector.cpp.s
 
 src/color_utils.o: src/color_utils.cpp.o
@@ -158,7 +158,7 @@ src/color_utils.o: src/color_utils.cpp.o
 
 # target to build an object file
 src/color_utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/color_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/color_utils.cpp.o
 .PHONY : src/color_utils.cpp.o
 
 src/color_utils.i: src/color_utils.cpp.i
@@ -166,7 +166,7 @@ src/color_utils.i: src/color_utils.cpp.i
 
 # target to preprocess a source file
 src/color_utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/color_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/color_utils.cpp.i
 .PHONY : src/color_utils.cpp.i
 
 src/color_utils.s: src/color_utils.cpp.s
@@ -174,7 +174,7 @@ src/color_utils.s: src/color_utils.cpp.s
 
 # target to generate assembly for a file
 src/color_utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/color_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/color_utils.cpp.s
 .PHONY : src/color_utils.cpp.s
 
 src/hooks.o: src/hooks.cpp.o
@@ -182,7 +182,7 @@ src/hooks.o: src/hooks.cpp.o
 
 # target to build an object file
 src/hooks.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/hooks.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/hooks.cpp.o
 .PHONY : src/hooks.cpp.o
 
 src/hooks.i: src/hooks.cpp.i
@@ -190,7 +190,7 @@ src/hooks.i: src/hooks.cpp.i
 
 # target to preprocess a source file
 src/hooks.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/hooks.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/hooks.cpp.i
 .PHONY : src/hooks.cpp.i
 
 src/hooks.s: src/hooks.cpp.s
@@ -198,7 +198,7 @@ src/hooks.s: src/hooks.cpp.s
 
 # target to generate assembly for a file
 src/hooks.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/hooks.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/hooks.cpp.s
 .PHONY : src/hooks.cpp.s
 
 src/kmeans_wrapper.o: src/kmeans_wrapper.cpp.o
@@ -206,7 +206,7 @@ src/kmeans_wrapper.o: src/kmeans_wrapper.cpp.o
 
 # target to build an object file
 src/kmeans_wrapper.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/kmeans_wrapper.cpp.o
 .PHONY : src/kmeans_wrapper.cpp.o
 
 src/kmeans_wrapper.i: src/kmeans_wrapper.cpp.i
@@ -214,7 +214,7 @@ src/kmeans_wrapper.i: src/kmeans_wrapper.cpp.i
 
 # target to preprocess a source file
 src/kmeans_wrapper.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/kmeans_wrapper.cpp.i
 .PHONY : src/kmeans_wrapper.cpp.i
 
 src/kmeans_wrapper.s: src/kmeans_wrapper.cpp.s
@@ -222,7 +222,7 @@ src/kmeans_wrapper.s: src/kmeans_wrapper.cpp.s
 
 # target to generate assembly for a file
 src/kmeans_wrapper.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/kmeans_wrapper.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/kmeans_wrapper.cpp.s
 .PHONY : src/kmeans_wrapper.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -230,7 +230,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -238,7 +238,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -246,7 +246,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/template_engine.o: src/template_engine.cpp.o
@@ -254,7 +254,7 @@ src/template_engine.o: src/template_engine.cpp.o
 
 # target to build an object file
 src/template_engine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/template_engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/template_engine.cpp.o
 .PHONY : src/template_engine.cpp.o
 
 src/template_engine.i: src/template_engine.cpp.i
@@ -262,7 +262,7 @@ src/template_engine.i: src/template_engine.cpp.i
 
 # target to preprocess a source file
 src/template_engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/template_engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/template_engine.cpp.i
 .PHONY : src/template_engine.cpp.i
 
 src/template_engine.s: src/template_engine.cpp.s
@@ -270,7 +270,7 @@ src/template_engine.s: src/template_engine.cpp.s
 
 # target to generate assembly for a file
 src/template_engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/heugen.dir/build.make CMakeFiles/heugen.dir/src/template_engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/huegen.dir/build.make CMakeFiles/huegen.dir/src/template_engine.cpp.s
 .PHONY : src/template_engine.cpp.s
 
 # Help Target
@@ -281,7 +281,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... heugen"
+	@echo "... huegen"
 	@echo "... src/color_selector.o"
 	@echo "... src/color_selector.i"
 	@echo "... src/color_selector.s"

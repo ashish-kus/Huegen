@@ -1,9 +1,0 @@
-Language: Cpp
-BasedOnStyle: LLVM
-AccessModifierOffset: 0
-AlignConsecutiveAssignments: true
-AlwaysBreakAfterReturnType: TopLevel
-ConstructorInitializerIndentWidth: 2
-ContinuationIndentWidth: 2
-PenaltyReturnTypeOnItsOwnLine: 200
-PointerAlignment: Left

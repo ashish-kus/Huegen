@@ -1,5 +1,6 @@
-CMakeFiles/heugen.dir/src/main.cpp.o: \
- /home/ashishk/Work/Repo/Huegen/src/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/huegen.dir/src/color_selector.cpp.o: \
+ /home/ashishk/Work/Repo/Huegen/src/color_selector.cpp \
+ /usr/include/stdc-predef.h \
  /home/ashishk/Work/Repo/Huegen/include/color_selector.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
@@ -364,93 +365,4 @@ CMakeFiles/heugen.dir/src/main.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /home/ashishk/Work/Repo/Huegen/include/color_utils.hpp \
- /home/ashishk/Work/Repo/Huegen/include/kmeans_wrapper.hpp \
- /home/ashishk/Work/Repo/Huegen/include/template_engine.hpp \
- /home/ashishk/Work/Repo/Huegen/include/color_utils.hpp \
- /usr/include/c++/15.1.1/filesystem /usr/include/c++/15.1.1/bits/fs_fwd.h \
- /usr/include/c++/15.1.1/bits/fs_path.h /usr/include/c++/15.1.1/codecvt \
- /usr/include/c++/15.1.1/bits/fs_dir.h \
- /usr/include/c++/15.1.1/bits/fs_ops.h /usr/include/c++/15.1.1/fstream \
- /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/basic_file.h \
- /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/15.1.1/bits/fstream.tcc /usr/include/nlohmann/json.hpp \
- /usr/include/c++/15.1.1/iterator \
- /usr/include/c++/15.1.1/bits/stream_iterator.h \
- /usr/include/nlohmann/adl_serializer.hpp \
- /usr/include/nlohmann/detail/abi_macros.hpp \
- /usr/include/nlohmann/detail/conversions/from_json.hpp \
- /usr/include/c++/15.1.1/forward_list \
- /usr/include/c++/15.1.1/bits/forward_list.h \
- /usr/include/c++/15.1.1/bits/forward_list.tcc \
- /usr/include/c++/15.1.1/valarray \
- /usr/include/c++/15.1.1/bits/valarray_array.h \
- /usr/include/c++/15.1.1/bits/valarray_array.tcc \
- /usr/include/c++/15.1.1/bits/valarray_before.h \
- /usr/include/c++/15.1.1/bits/slice_array.h \
- /usr/include/c++/15.1.1/bits/valarray_after.h \
- /usr/include/c++/15.1.1/bits/gslice.h \
- /usr/include/c++/15.1.1/bits/gslice_array.h \
- /usr/include/c++/15.1.1/bits/mask_array.h \
- /usr/include/c++/15.1.1/bits/indirect_array.h \
- /usr/include/nlohmann/detail/exceptions.hpp \
- /usr/include/nlohmann/detail/value_t.hpp \
- /usr/include/nlohmann/detail/macro_scope.hpp \
- /usr/include/nlohmann/detail/meta/detected.hpp \
- /usr/include/nlohmann/detail/meta/void_t.hpp \
- /usr/include/nlohmann/thirdparty/hedley/hedley.hpp \
- /usr/include/c++/15.1.1/version /usr/include/c++/15.1.1/cassert \
- /usr/include/nlohmann/detail/string_escape.hpp \
- /usr/include/nlohmann/detail/input/position_t.hpp \
- /usr/include/nlohmann/detail/meta/cpp_future.hpp \
- /usr/include/nlohmann/detail/meta/type_traits.hpp \
- /usr/include/nlohmann/detail/iterators/iterator_traits.hpp \
- /usr/include/nlohmann/detail/meta/call_std/begin.hpp \
- /usr/include/nlohmann/detail/meta/call_std/end.hpp \
- /usr/include/nlohmann/json_fwd.hpp \
- /usr/include/nlohmann/detail/string_concat.hpp \
- /usr/include/nlohmann/detail/meta/identity_tag.hpp \
- /usr/include/nlohmann/detail/meta/std_fs.hpp \
- /usr/include/nlohmann/detail/conversions/to_json.hpp \
- /usr/include/c++/15.1.1/optional \
- /usr/include/nlohmann/detail/iterators/iteration_proxy.hpp \
- /usr/include/nlohmann/detail/string_utils.hpp \
- /usr/include/nlohmann/byte_container_with_subtype.hpp \
- /usr/include/nlohmann/detail/hash.hpp \
- /usr/include/nlohmann/detail/input/binary_reader.hpp \
- /usr/include/nlohmann/detail/input/input_adapters.hpp \
- /usr/include/c++/15.1.1/numeric \
- /usr/include/c++/15.1.1/bits/stl_numeric.h \
- /usr/include/c++/15.1.1/pstl/glue_numeric_defs.h \
- /usr/include/nlohmann/detail/input/json_sax.hpp \
- /usr/include/nlohmann/detail/input/lexer.hpp \
- /usr/include/nlohmann/detail/meta/is_sax.hpp \
- /usr/include/nlohmann/detail/input/parser.hpp \
- /usr/include/nlohmann/detail/iterators/internal_iterator.hpp \
- /usr/include/nlohmann/detail/iterators/primitive_iterator.hpp \
- /usr/include/nlohmann/detail/iterators/iter_impl.hpp \
- /usr/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
- /usr/include/nlohmann/detail/json_custom_base_class.hpp \
- /usr/include/nlohmann/detail/json_pointer.hpp \
- /usr/include/nlohmann/detail/json_ref.hpp \
- /usr/include/nlohmann/detail/output/binary_writer.hpp \
- /usr/include/nlohmann/detail/output/output_adapters.hpp \
- /usr/include/nlohmann/detail/output/serializer.hpp \
- /usr/include/nlohmann/detail/conversions/to_chars.hpp \
- /usr/include/nlohmann/ordered_map.hpp /usr/include/c++/15.1.1/any \
- /usr/include/nlohmann/detail/macro_unscope.hpp \
- /usr/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
- /usr/include/c++/15.1.1/regex /usr/include/c++/15.1.1/bitset \
- /usr/include/c++/15.1.1/stack /usr/include/c++/15.1.1/bits/stl_stack.h \
- /usr/include/c++/15.1.1/bits/regex_constants.h \
- /usr/include/c++/15.1.1/bits/regex_error.h \
- /usr/include/c++/15.1.1/bits/regex_automaton.h \
- /usr/include/c++/15.1.1/bits/regex_automaton.tcc \
- /usr/include/c++/15.1.1/bits/regex_scanner.h \
- /usr/include/c++/15.1.1/bits/regex_scanner.tcc \
- /usr/include/c++/15.1.1/bits/regex_compiler.h \
- /usr/include/c++/15.1.1/bits/regex_compiler.tcc \
- /usr/include/c++/15.1.1/bits/regex.h \
- /usr/include/c++/15.1.1/bits/regex.tcc \
- /usr/include/c++/15.1.1/bits/regex_executor.h \
- /usr/include/c++/15.1.1/bits/regex_executor.tcc
+ /home/ashishk/Work/Repo/Huegen/include/color_utils.hpp

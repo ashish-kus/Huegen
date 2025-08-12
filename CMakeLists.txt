@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(OpenCV QUIET)
 
 # Create executable
-add_executable(heugen
+add_executable(huegen
     src/main.cpp
     src/color_selector.cpp
     src/color_utils.cpp
@@ -18,7 +18,7 @@ add_executable(heugen
 )
 
 # Set include directories
-target_include_directories(heugen PRIVATE 
+target_include_directories(huegen PRIVATE 
     ${CMAKE_CURRENT_SOURCE_DIR}/include
     /usr/include/opencv4
 )
@@ -26,7 +26,7 @@ target_include_directories(heugen PRIVATE
 if(OpenCV_FOUND)
     # If OpenCV is found but gives linking issues, use manual linking
     message(STATUS "OpenCV found, using manual library linking to avoid HDF5 issues")
-    target_link_libraries(heugen PRIVATE 
+    target_link_libraries(huegen PRIVATE 
         opencv_core 
         opencv_imgcodecs 
         opencv_imgproc
@@ -34,7 +34,7 @@ if(OpenCV_FOUND)
 else()
     # Fallback manual linking
     message(STATUS "OpenCV not found via find_package, using manual linking")
-    target_link_libraries(heugen PRIVATE 
+    target_link_libraries(huegen PRIVATE 
         opencv_core 
         opencv_imgcodecs 
         opencv_imgproc
