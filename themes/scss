@@ -1,0 +1,5 @@
+$color-primary: #D58E51;
+$color-secondary: #F1DD86;
+$color-accent: #BA6D49;
+$color-bg: #D58E51;
+$color-text: #8CDDD7;

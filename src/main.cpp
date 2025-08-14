@@ -12,7 +12,7 @@
 // namespace fs = std::filesystem;
 // using namespace std;
 // using namespace cv;
-using json = nlohmann::json;
+// using json = nlohmann::json;
 
 struct AppConfig {
   std::string imagePath;
@@ -41,7 +41,7 @@ AppConfig parseArguments(int argc, char *argv[]) {
 
   if (result.count("help") || argc == 1) {
     std::cout << options.help() << std::endl;
-    exit(0); // exit here, not return wrong type
+    exit(0);
   }
 
   AppConfig config;
@@ -70,7 +70,7 @@ void ensureDirectories(const AppConfig &config) {
 std::vector<cv::Vec3f> processImage(const std::string &imagePath) {
   cv::Mat img = cv::imread(imagePath);
   if (img.empty()) {
-    throw std::runtime_error("Failed to load image: " + imagePath);
+    throw std::runtime_error(" Failed to load image: " + imagePath);
   }
   cv::resize(img, img, cv::Size(200, 200));
   img.convertTo(img, CV_32F, 1.0 / 255.0);
@@ -94,7 +94,7 @@ int main(int argc, char *argv[]) {
     auto distinctColors = selectMostDistinctColors(filtered, 16);
 
     sort(distinctColors.begin(), distinctColors.end(),
-         [](const cv::Vec3f &a, const Vec3f &b) {
+         [](const cv::Vec3f &a, const cv::Vec3f &b) {
            return calculateSaturation(a) > calculateSaturation(b);
          });
 
@@ -109,7 +109,7 @@ int main(int argc, char *argv[]) {
       return 1;
     }
   } catch (const std::exception &e) {
-    std::cerr << "Error" << e.what() << std::endl;
+    std::cerr << "Error: " << e.what() << std::endl;
     return 1;
   }
   return 0;

@@ -42,16 +42,33 @@ sudo make install
 
 ## Usage
 
+A C++ tool that extracts visually distinct color palettes from images
+
+```
+
+Usage:
+  huegen [OPTION...]
+
+  -h, --help          Prints help.
+  -i, --image arg     Path to the image file
+  -o, --output arg    Output folder path (default:
+                      /home/ashishk/.config/huegen/themes/)
+  -t, --template arg  Template folder path (default:
+                      /home/ashishk/.config/huegen/templates/)
+  -v, --verbose       Enable verbose logging
+
+```
+
 ### Basic Usage
 
 ```bash
-./huegen <image_path>
+./huegen -i <image_path>
 ```
 
 **Example:**
 
 ```bash
-./huegen ~/Pictures/wallpaper.jpg
+./huegen -i ~/Pictures/wallpaper.jpg
 ```
 
 ### Directory Structure
